@@ -14,6 +14,7 @@ public class App {
         SpringApplication.run(App.class, args);
     }
 
+    
     @PostConstruct
     public void init()
     {
