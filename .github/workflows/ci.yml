@@ -21,7 +21,7 @@ jobs:
         os: [ubuntu-latest, windows-latest, macOS-latest]
     
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
 
     - name: Set up JDK 1.8
       uses: actions/setup-java@v1
@@ -37,7 +37,7 @@ jobs:
     - name: Build and Push Docker Image
       uses: mr-smithers-excellent/docker-build-push@v4
       with:
-        image: nanajanashia/demo-app
+        image: nitin6548/demo-app
         registry: docker.io
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
