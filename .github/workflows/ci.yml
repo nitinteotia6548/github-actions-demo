@@ -9,6 +9,7 @@ on:
     paths: 
       - "ci.yml"
       - "github-actions-demo/**"
+      - "**/src/**/**/**"
   pull_request:
     branches: [ master ]
 
