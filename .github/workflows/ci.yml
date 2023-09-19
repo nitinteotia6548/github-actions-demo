@@ -10,6 +10,7 @@ on:
       - "ci.yml"
       - "github-actions-demo/**"
       - "**/src/**/**/**"
+      - "src/main/java/com/example/App.java"
   pull_request:
     branches: [ master ]
 
